@@ -1,6 +1,3 @@
-from numpy.lib.polynomial import polysub
-
-
 plus = '+'
 minus = '-'
 
