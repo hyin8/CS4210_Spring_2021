@@ -1,5 +1,9 @@
-ary = [2,1,3]
-ary.sort()
-print(ary)
-ary.clear()
-print(ary)
+from numpy.lib.polynomial import polysub
+
+
+plus = '+'
+minus = '-'
+
+print(ord(plus))
+print(ord(minus))
+
