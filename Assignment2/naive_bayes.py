@@ -97,6 +97,7 @@ for i, instance in enumerate(db_test):
     predicted_proba = clf.predict_proba([X])[0]
     predicted_class  = clf.predict([X])[0]
 
-    print ("D{day}".format(day = 15+i).ljust(15) + instance[1].ljust(15) + instance[2].ljust(15) + instance[3].ljust(15) + instance[4].ljust(15) + PlayTennis[predicted_class].ljust(15) + '{:.2f}'.format(predicted_proba[predicted_class-1]).ljust(15))
+    if(predicted_proba[predicted_class-1]>= 0.75):
+      print("D{day}".format(day = 15+i).ljust(15) + instance[1].ljust(15) + instance[2].ljust(15) + instance[3].ljust(15) + instance[4].ljust(15) + PlayTennis[predicted_class].ljust(15) + '{:.2f}'.format(predicted_proba[predicted_class-1]).ljust(15))
     
 
