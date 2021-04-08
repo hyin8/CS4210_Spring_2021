@@ -36,7 +36,6 @@ with open('optdigits.tes', 'r') as testingFile:
 #-------------------------------------------------------------------
 
 print("Started my base and ensemble classifier ...")
-print("ClassVote size: ",len(classVotes))
 
 for k in range(20): #we will create 20 bootstrap samples here (k = 20). One classifier will be created for each bootstrap sample
 
